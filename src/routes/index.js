@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Home from "../Home";
 
 const RoutesApp = () => {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home  />} />
             </Routes>
         </BrowserRouter>
     );
